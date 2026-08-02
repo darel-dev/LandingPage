@@ -3,31 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nexus Petroleum - Powering Tomorrow's Energy</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>Nexus Petroleum — Powering Tomorrow's Clean Energy Future</title>
+    <meta name="description" content="Global leader in sustainable petroleum solutions, upstream exploration, refining, and industrial decarbonization across 45 countries.">
+    <!-- Google Fonts: Space Grotesk (Headings) & Plus Jakarta Sans (Body) + Oswald fallback -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Top Market Ticker Bar -->
+    <div class="market-ticker" id="marketTicker">
+        <div class="ticker-content">
+            <span class="ticker-item"><i class="fas fa-chart-line"></i> <strong>BRENT CRUDE:</strong> $82.45 <span class="ticker-up">+1.4% <i class="fas fa-caret-up"></i></span></span>
+            <span class="ticker-divider">•</span>
+            <span class="ticker-item"><strong>WTI CRUDE:</strong> $78.10 <span class="ticker-up">+0.9% <i class="fas fa-caret-up"></i></span></span>
+            <span class="ticker-divider">•</span>
+            <span class="ticker-item"><strong>NATURAL GAS:</strong> $2.85 <span class="ticker-down">-0.4% <i class="fas fa-caret-down"></i></span></span>
+            <span class="ticker-divider">•</span>
+            <span class="ticker-item"><strong>NEXUS SUSTAINABILITY INDEX:</strong> 142.6 <span class="ticker-up">+3.1% <i class="fas fa-caret-up"></i></span></span>
+            <span class="ticker-divider">•</span>
+            <span class="ticker-item"><strong>ESG SAFETY RATING:</strong> AAA <span class="ticker-neutral">(100% COMPLIANCE)</span></span>
+            <span class="ticker-divider">•</span>
+            <!-- Duplicate for seamless scroll on wide screens -->
+            <span class="ticker-item"><i class="fas fa-chart-line"></i> <strong>BRENT CRUDE:</strong> $82.45 <span class="ticker-up">+1.4% <i class="fas fa-caret-up"></i></span></span>
+            <span class="ticker-divider">•</span>
+            <span class="ticker-item"><strong>WTI CRUDE:</strong> $78.10 <span class="ticker-up">+0.9% <i class="fas fa-caret-up"></i></span></span>
+            <span class="ticker-divider">•</span>
+            <span class="ticker-item"><strong>NEXUS GREEN H₂ INDEX:</strong> 98.4 <span class="ticker-up">+4.2% <i class="fas fa-caret-up"></i></span></span>
+        </div>
+    </div>
+
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="container nav-container">
-            <div class="logo">
-                <i class="fas fa-oil-well"></i>
-                <span>NEXUS</span>
-            </div>
+            <a href="#home" class="logo" aria-label="Nexus Petroleum Home">
+                <div class="logo-icon">
+                    <i class="fas fa-oil-well"></i>
+                </div>
+                <span class="logo-text">NEXUS<span class="logo-dot">.</span></span>
+            </a>
             <ul class="nav-menu" id="navMenu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#operations">Operations</a></li>
-                <li><a href="#stats">Impact</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#operations" class="nav-link">Operations</a></li>
+                <li><a href="#stats" class="nav-link">ESG Impact</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li class="mobile-cta-li">
+                    <a href="#contact" class="btn btn-primary btn-nav-mobile">Investor Portal</a>
+                </li>
             </ul>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-nav-cta">
+                    <span>Investor Portal</span>
+                    <i class="fas fa-arrow-up-right-from-square"></i>
+                </a>
+                <div class="hamburger" id="hamburger" aria-label="Toggle Navigation Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </div>
     </nav>
@@ -36,39 +75,146 @@
     <section class="hero" id="home">
         <div class="hero-overlay"></div>
         <div class="hero-particles" id="particles"></div>
+        <div class="hero-ambient-orb orb-1"></div>
+        <div class="hero-ambient-orb orb-2"></div>
+
         <div class="container hero-content">
             <div class="hero-text">
-                <span class="hero-badge">Global Energy Leader Since 1972</span>
+                <div class="hero-badge">
+                    <span class="pulse-dot"></span>
+                    <span>ISO 14001 &amp; 45001 CERTIFIED • GLOBAL ENERGY LEADER</span>
+                </div>
                 <h1 class="hero-title">
-                    POWERING <span class="highlight">TOMORROW'S</span> ENERGY
+                    POWERING <span class="highlight">TOMORROW'S</span> ENERGY FUTURE
                 </h1>
                 <p class="hero-subtitle">
-                    Pioneering sustainable petroleum solutions with cutting-edge technology, 
-                    operational excellence, and unwavering commitment to energy security worldwide.
+                    Pioneering sustainable petroleum exploration, state-of-the-art refining, and global decarbonization across 45 countries with an unwavering commitment to energy security.
                 </p>
                 <div class="hero-buttons">
                     <a href="#operations" class="btn btn-primary">
-                        <span>Explore Operations</span>
+                        <span>Explore Global Operations</span>
                         <i class="fas fa-arrow-right"></i>
                     </a>
-                    <a href="#about" class="btn btn-secondary">
-                        <span>Learn More</span>
+                    <a href="#projects" class="btn btn-secondary">
+                        <i class="fas fa-diagram-project"></i>
+                        <span>Major Projects</span>
                     </a>
                 </div>
+                <!-- Hero Quick Stats / Trust Strip -->
+                <div class="hero-trust">
+                    <div class="trust-item">
+                        <span class="trust-value">50+ Yrs</span>
+                        <span class="trust-label">Industry Leadership</span>
+                    </div>
+                    <div class="trust-divider"></div>
+                    <div class="trust-item">
+                        <span class="trust-value">2.8M bbl/d</span>
+                        <span class="trust-label">Global Production</span>
+                    </div>
+                    <div class="trust-divider"></div>
+                    <div class="trust-item">
+                        <span class="trust-value">-40%</span>
+                        <span class="trust-label">Emissions by 2030</span>
+                    </div>
+                </div>
             </div>
+
+            <!-- Hero Visual: Real-Time Operations Control Center -->
             <div class="hero-visual">
-                <div class="oil-rig">
-                    <div class="rig-base"></div>
-                    <div class="rig-tower"></div>
-                    <div class="rig-arm"></div>
+                <div class="control-panel-card">
+                    <div class="panel-header">
+                        <div class="panel-status">
+                            <span class="status-indicator"></span>
+                            <span>LIVE TELEMETRY • HQ HOUSTON</span>
+                        </div>
+                        <div class="panel-badge">SYS-OK</div>
+                    </div>
+
+                    <div class="panel-graphic">
+                        <!-- Custom Animated SVG Offshore Platform & Green Wind Graphic -->
+                        <svg class="energy-svg" viewBox="0 0 400 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Water line -->
+                            <path d="M0 180 C80 176 120 184 200 180 C280 176 320 184 400 180 L400 220 L0 220 Z" fill="rgba(255,107,0,0.12)" />
+                            <path d="M0 190 C100 185 150 195 250 190 C350 185 380 195 400 190" stroke="rgba(255,107,0,0.4)" stroke-width="2" />
+                            
+                            <!-- Offshore Rig Tower -->
+                            <rect x="70" y="70" width="16" height="110" fill="url(#orangeGradient)" />
+                            <rect x="45" y="110" width="66" height="8" fill="#2A2F3A" />
+                            <polygon points="78,40 60,70 96,70" fill="#FF6B00" />
+                            <!-- Platform base legs -->
+                            <line x1="55" y1="118" x2="40" y2="180" stroke="#64748B" stroke-width="3" />
+                            <line x1="100" y1="118" x2="115" y2="180" stroke="#64748B" stroke-width="3" />
+                            <line x1="78" y1="118" x2="78" y2="180" stroke="#94A3B8" stroke-width="3" />
+                            
+                            <!-- Animated Flare / Flame -->
+                            <circle cx="78" cy="35" r="6" fill="#FFA500" class="svg-pulse" />
+                            <circle cx="78" cy="35" r="10" fill="rgba(255,165,0,0.3)" class="svg-pulse" />
+
+                            <!-- Offshore Wind Turbine (Green Energy Transition) -->
+                            <line x1="280" y1="90" x2="280" y2="180" stroke="#E2E8F0" stroke-width="4" />
+                            <circle cx="280" cy="85" r="6" fill="#10B981" />
+                            <g class="turbine-blades" style="transform-origin: 280px 85px;">
+                                <line x1="280" y1="85" x2="280" y2="45" stroke="#10B981" stroke-width="3" stroke-linecap="round" />
+                                <line x1="280" y1="85" x2="315" y2="105" stroke="#10B981" stroke-width="3" stroke-linecap="round" />
+                                <line x1="280" y1="85" x2="245" y2="105" stroke="#10B981" stroke-width="3" stroke-linecap="round" />
+                            </g>
+                            
+                            <!-- Connecting Subsea Pipeline -->
+                            <path d="M78 180 Q179 205 280 180" stroke="rgba(16,185,129,0.6)" stroke-width="2" stroke-dasharray="6 4" />
+
+                            <!-- Gradients -->
+                            <defs>
+                                <linearGradient id="orangeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" stop-color="#FF8F3D" />
+                                    <stop offset="100%" stop-color="#E55D00" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+
+                    <!-- Live Telemetry Data Cards -->
+                    <div class="panel-metrics">
+                        <div class="metric-box">
+                            <div class="metric-label">DAILY OUTPUT</div>
+                            <div class="metric-number">2.84M <span class="metric-unit">bbl/d</span></div>
+                            <div class="metric-trend up">+2.4% vs target</div>
+                        </div>
+                        <div class="metric-box">
+                            <div class="metric-label">RENEWABLE MIX</div>
+                            <div class="metric-number">38.4% <span class="metric-unit">H₂/Solar</span></div>
+                            <div class="metric-trend up">+5.1% YoY</div>
+                        </div>
+                        <div class="metric-box">
+                            <div class="metric-label">CARBON CAPTURE</div>
+                            <div class="metric-number">94.2% <span class="metric-unit">EFF</span></div>
+                            <div class="metric-trend neutral">Net-Zero Track</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
         <div class="scroll-indicator">
-            <div class="mouse">
-                <div class="wheel"></div>
+            <a href="#about" aria-label="Scroll down to About section">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <p>Scroll Down</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- Partner Logos Banner -->
+    <section class="partner-strip">
+        <div class="container">
+            <p class="partner-title">TRUSTED BY GLOBAL ENERGY MINISTRIES, SOVEREIGN FUNDS, &amp; INDUSTRY LEADERS</p>
+            <div class="partner-logos">
+                <div class="partner-logo-item"><i class="fas fa-shield-halved"></i> <span>API CERTIFIED</span></div>
+                <div class="partner-logo-item"><i class="fas fa-globe"></i> <span>WORLD ENERGY COUNCIL</span></div>
+                <div class="partner-logo-item"><i class="fas fa-leaf"></i> <span>NET-ZERO 2050 PLEDGE</span></div>
+                <div class="partner-logo-item"><i class="fas fa-award"></i> <span>ISO 14001 ENVIRONMENTAL</span></div>
+                <div class="partner-logo-item"><i class="fas fa-fire-extinguisher"></i> <span>ZERO-FLARE STANDARD</span></div>
             </div>
-            <p>Scroll Down</p>
         </div>
     </section>
 
@@ -76,33 +222,72 @@
     <section class="about" id="about">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Who We Are</span>
-                <h2 class="section-title">Building the Future of Energy</h2>
+                <span class="section-tag"><i class="fas fa-compass"></i> Who We Are</span>
+                <h2 class="section-title">Engineering Sustainable Energy at Global Scale</h2>
                 <p class="section-subtitle">
-                    Five decades of excellence in petroleum exploration, production, and distribution
+                    Five decades of technical excellence in exploration, advanced refining, and decarbonization
                 </p>
             </div>
+
             <div class="about-grid">
                 <div class="about-card">
                     <div class="card-icon">
                         <i class="fas fa-bullseye"></i>
                     </div>
                     <h3>Our Mission</h3>
-                    <p>To deliver reliable, affordable, and cleaner energy solutions that drive global progress while preserving our planet for future generations.</p>
+                    <p>To deliver reliable, affordable, and cleaner energy solutions that drive global economic progress while safeguarding natural ecosystems for future generations.</p>
                 </div>
                 <div class="about-card">
                     <div class="card-icon">
                         <i class="fas fa-eye"></i>
                     </div>
                     <h3>Our Vision</h3>
-                    <p>To be the world's most respected energy company, leading the transition to a sustainable energy future through innovation and integrity.</p>
+                    <p>To be the world's most respected energy company by leading the industrial transition toward a net-zero carbon economy through bold innovation and integrity.</p>
                 </div>
                 <div class="about-card">
                     <div class="card-icon">
-                        <i class="fas fa-handshake"></i>
+                        <i class="fas fa-handshake-angle"></i>
                     </div>
                     <h3>Our Values</h3>
-                    <p>Safety, integrity, respect, excellence, and sustainability form the foundation of everything we do across our global operations.</p>
+                    <p>Uncompromised site safety, transparent governance, respect for communities, engineering excellence, and environmental stewardship guide every operation.</p>
+                </div>
+                <div class="about-card highlight-card">
+                    <div class="card-icon green-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Innovation &amp; CCUS</h3>
+                    <p>We invest over $1.2B annually in Carbon Capture, Utilization &amp; Storage (CCUS), green hydrogen, and advanced biofuels across our global refinery network.</p>
+                </div>
+            </div>
+
+            <!-- Interactive Timeline / Milestones -->
+            <div class="timeline-wrapper">
+                <div class="timeline-header">
+                    <h4><i class="fas fa-history"></i> 50+ Years of Continual Innovation</h4>
+                    <div class="timeline-tabs" id="timelineTabs">
+                        <button class="time-tab active" data-year="1972">1972</button>
+                        <button class="time-tab" data-year="1998">1998</button>
+                        <button class="time-tab" data-year="2015">2015</button>
+                        <button class="time-tab" data-year="2026">2026</button>
+                    </div>
+                </div>
+                <div class="timeline-content" id="timelineContent">
+                    <div class="timeline-item active" data-year="1972">
+                        <h5>Founded in Houston, TX as Nexus Oil &amp; Exploration</h5>
+                        <p>Established first deepwater drilling operations in the Gulf of Mexico, introducing computerized seismic analysis that set early industry safety standards.</p>
+                    </div>
+                    <div class="timeline-item" data-year="1998">
+                        <h5>Global LNG &amp; Midstream Expansion</h5>
+                        <p>Expanded operations across Europe, Asia, and West Africa. Built our first world-scale Liquefied Natural Gas (LNG) distribution network to supply clean transition fuel.</p>
+                    </div>
+                    <div class="timeline-item" data-year="2015">
+                        <h5>Carbon Capture &amp; Methane Reduction Pledge</h5>
+                        <p>Launched Nexus CleanTech division, pioneering large-scale carbon sequestration in Permian Basin reservoirs and eliminating routine flaring across 85% of sites.</p>
+                    </div>
+                    <div class="timeline-item" data-year="2026">
+                        <h5>Net-Zero 2050 Roadmap &amp; Green Hydrogen Grid</h5>
+                        <p>Deploying 3.8 GW of integrated offshore wind and solar power to run refinery operations, with major green hydrogen production facilities live in Texas and Singapore.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -112,129 +297,400 @@
     <section class="services" id="services">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">What We Do</span>
-                <h2 class="section-title">Our Core Services</h2>
-                <p class="section-subtitle">Comprehensive energy solutions across the value chain</p>
+                <span class="section-tag"><i class="fas fa-gear"></i> What We Do</span>
+                <h2 class="section-title">End-to-End Energy Solutions Across the Value Chain</h2>
+                <p class="section-subtitle">Combining petroleum excellence with next-generation clean technologies</p>
             </div>
+
             <div class="services-grid">
                 <div class="service-card">
-                    <div class="service-image" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=800')">
-                        <i class="fas fa-search service-icon"></i>
+                    <div class="service-image" style="background-image: linear-gradient(rgba(10,14,23,0.4), rgba(10,14,23,0.85)), url('https://images.unsplash.com/photo-1541888946425-d0ebb18086f6?auto=format&fit=crop&w=800&q=80')">
+                        <span class="service-badge">UPSTREAM</span>
+                        <i class="fas fa-search-location service-icon"></i>
                     </div>
                     <div class="service-content">
-                        <h3>Exploration</h3>
-                        <p>Advanced geological surveys and seismic analysis to identify new reserves with precision and minimal environmental impact.</p>
-                        <a href="#" class="service-link">Learn More <i class="fas fa-chevron-right"></i></a>
+                        <h3>Upstream Exploration</h3>
+                        <p>Advanced 3D/4D geological modeling and seismic imaging to discover high-yield reserves with pinpoint accuracy and minimal environmental footprint.</p>
+                        <button class="service-link btn-modal-trigger" data-service="exploration">
+                            <span>View Technical Specs</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
                     </div>
                 </div>
+
                 <div class="service-card">
-                    <div class="service-image" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=800')">
+                    <div class="service-image" style="background-image: linear-gradient(rgba(10,14,23,0.4), rgba(10,14,23,0.85)), url('https://images.unsplash.com/photo-1518709268805-4e9042af2176?auto=format&fit=crop&w=800&q=80')">
+                        <span class="service-badge">UPSTREAM</span>
                         <i class="fas fa-industry service-icon"></i>
                     </div>
                     <div class="service-content">
-                        <h3>Production</h3>
-                        <p>State-of-the-art extraction and processing facilities ensuring maximum efficiency and safety in oil and gas production.</p>
-                        <a href="#" class="service-link">Learn More <i class="fas fa-chevron-right"></i></a>
+                        <h3>Deepwater Production</h3>
+                        <p>State-of-the-art offshore and onshore extraction platforms operating with automated blowout preventers, zero methane leakage, and 99.9% uptime.</p>
+                        <button class="service-link btn-modal-trigger" data-service="production">
+                            <span>View Technical Specs</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
                     </div>
                 </div>
+
                 <div class="service-card">
-                    <div class="service-image" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1518770660439-4636190af475?w=800')">
-                        <i class="fas fa-truck service-icon"></i>
+                    <div class="service-image" style="background-image: linear-gradient(rgba(10,14,23,0.4), rgba(10,14,23,0.85)), url('https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&w=800&q=80')">
+                        <span class="service-badge">MIDSTREAM</span>
+                        <i class="fas fa-oil-can service-icon"></i>
                     </div>
                     <div class="service-content">
-                        <h3>Distribution</h3>
-                        <p>Global logistics network ensuring timely delivery of refined products to markets across six continents.</p>
-                        <a href="#" class="service-link">Learn More <i class="fas fa-chevron-right"></i></a>
+                        <h3>Refining &amp; Petrochemicals</h3>
+                        <p>High-efficiency conversion of crude oil into cleaner-burning fuels, specialized synthetic lubricants, and essential feedstock for modern materials.</p>
+                        <button class="service-link btn-modal-trigger" data-service="refining">
+                            <span>View Technical Specs</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
                     </div>
                 </div>
+
                 <div class="service-card">
-                    <div class="service-image" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=800')">
-                        <i class="fas fa-leaf service-icon"></i>
+                    <div class="service-image" style="background-image: linear-gradient(rgba(10,14,23,0.4), rgba(10,14,23,0.85)), url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80')">
+                        <span class="service-badge">DOWNSTREAM</span>
+                        <i class="fas fa-ship service-icon"></i>
                     </div>
                     <div class="service-content">
-                        <h3>Sustainability</h3>
-                        <p>Leading the energy transition with investments in renewable energy, carbon capture, and green technologies.</p>
-                        <a href="#" class="service-link">Learn More <i class="fas fa-chevron-right"></i></a>
+                        <h3>Global Logistics &amp; LNG</h3>
+                        <p>A worldwide distribution fleet of double-hulled LNG carriers, pipelines, and smart storage hubs ensuring energy security across six continents.</p>
+                        <button class="service-link btn-modal-trigger" data-service="distribution">
+                            <span>View Technical Specs</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image" style="background-image: linear-gradient(rgba(10,14,23,0.4), rgba(10,14,23,0.85)), url('https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=800&q=80')">
+                        <span class="service-badge green-badge">CLEAN TECH</span>
+                        <i class="fas fa-cloud-arrow-down service-icon"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Carbon Capture (CCUS)</h3>
+                        <p>Capturing CO₂ emissions at the industrial source and permanently storing them deep underground in depleted geological formations.</p>
+                        <button class="service-link btn-modal-trigger" data-service="sustainability">
+                            <span>View Technical Specs</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image" style="background-image: linear-gradient(rgba(10,14,23,0.4), rgba(10,14,23,0.85)), url('https://images.unsplash.com/photo-1509391365360-fa0ba1dc3a29?auto=format&fit=crop&w=800&q=80')">
+                        <span class="service-badge green-badge">CLEAN TECH</span>
+                        <i class="fas fa-solar-panel service-icon"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Renewables &amp; Green H₂</h3>
+                        <p>Developing industrial-scale offshore wind, solar arrays, and electrolysis facilities to produce zero-carbon hydrogen for heavy industry.</p>
+                        <button class="service-link btn-modal-trigger" data-service="renewables">
+                            <span>View Technical Specs</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Operations Section -->
+    <!-- NEW: Projects / Interactive Filter Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-layer-group"></i> Featured Assets</span>
+                <h2 class="section-title">Explore Our Flagship Global Energy Projects</h2>
+                <p class="section-subtitle">Filter through our major operational hubs, clean-tech sites, and offshore platforms</p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="project-filters" id="projectFilters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="offshore">Offshore &amp; Subsea</button>
+                <button class="filter-btn" data-filter="refining">Refining &amp; LNG</button>
+                <button class="filter-btn" data-filter="cleantech">Renewables &amp; CCUS</button>
+            </div>
+
+            <!-- Project Cards Grid -->
+            <div class="projects-grid" id="projectsGrid">
+                <div class="project-card" data-category="offshore">
+                    <div class="project-header">
+                        <span class="project-cat"><i class="fas fa-water"></i> Offshore &amp; Subsea</span>
+                        <span class="project-status">ACTIVE • PHASE 3</span>
+                    </div>
+                    <h3 class="project-title">Permian Deep Basin &amp; Gulf Horizon V</h3>
+                    <p class="project-desc">Ultra-deepwater drilling platform equipped with automated subsea safety valves and 100% electric power from shore.</p>
+                    <div class="project-stats">
+                        <div class="p-stat">
+                            <span>Capacity</span>
+                            <strong>450,000 bbl/d</strong>
+                        </div>
+                        <div class="p-stat">
+                            <span>Flare Rate</span>
+                            <strong>0.0% (Zero)</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="offshore">
+                    <div class="project-header">
+                        <span class="project-cat"><i class="fas fa-water"></i> Offshore &amp; Subsea</span>
+                        <span class="project-status">ACTIVE • OFFSHORE UK</span>
+                    </div>
+                    <h3 class="project-title">North Sea Horizon IV Electric Platform</h3>
+                    <p class="project-desc">Pioneering offshore rig powered entirely by adjacent offshore wind turbines, cutting operational CO₂ intensity by 72%.</p>
+                    <div class="project-stats">
+                        <div class="p-stat">
+                            <span>Capacity</span>
+                            <strong>310,000 bbl/d</strong>
+                        </div>
+                        <div class="p-stat">
+                            <span>Wind Power</span>
+                            <strong>120 MW Grid</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="refining">
+                    <div class="project-header">
+                        <span class="project-cat"><i class="fas fa-oil-can"></i> Refining &amp; LNG</span>
+                        <span class="project-status">ACTIVE • ASIA-PACIFIC</span>
+                    </div>
+                    <h3 class="project-title">Singapore Clean LNG &amp; Refining Terminal</h3>
+                    <p class="project-desc">Asia's premier low-sulfur refining and cryogenic LNG distribution hub, serving 18 regional economies with clean shipping fuel.</p>
+                    <div class="project-stats">
+                        <div class="p-stat">
+                            <span>LNG Throughput</span>
+                            <strong>12M Tons / Yr</strong>
+                        </div>
+                        <div class="p-stat">
+                            <span>Safety Record</span>
+                            <strong>9 Years Zero-LTI</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="cleantech">
+                    <div class="project-header">
+                        <span class="project-cat green-cat"><i class="fas fa-leaf"></i> Renewables &amp; CCUS</span>
+                        <span class="project-status green-status">NET-ZERO FACILITY</span>
+                    </div>
+                    <h3 class="project-title">Texas Carbon Storage &amp; Green H₂ Complex</h3>
+                    <p class="project-desc">World's largest direct air capture and underground saline aquifer CO₂ storage network integrated with a 500 MW green hydrogen electrolyzer.</p>
+                    <div class="project-stats">
+                        <div class="p-stat">
+                            <span>CO₂ Sequestration</span>
+                            <strong>4.5M Tons / Yr</strong>
+                        </div>
+                        <div class="p-stat">
+                            <span>H₂ Production</span>
+                            <strong>85,000 Tons / Yr</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Operations Section (Global Presence & Interactive Map) -->
     <section class="operations" id="operations">
         <div class="container">
             <div class="section-header light">
-                <span class="section-tag">Global Presence</span>
-                <h2 class="section-title">Operations Worldwide</h2>
-                <p class="section-subtitle">Active in 45 countries across six continents</p>
+                <span class="section-tag"><i class="fas fa-globe-americas"></i> Global Presence</span>
+                <h2 class="section-title">Operations Across Six Continents</h2>
+                <p class="section-subtitle">Click or hover any operating region on the interactive map to view live regional telemetry</p>
             </div>
+
             <div class="operations-content">
+                <!-- Stat Counters -->
                 <div class="operation-stats">
                     <div class="op-stat">
+                        <div class="op-stat-icon"><i class="fas fa-globe"></i></div>
                         <div class="op-number" data-target="45">0</div>
                         <div class="op-label">Countries</div>
                     </div>
                     <div class="op-stat">
+                        <div class="op-stat-icon"><i class="fas fa-industry"></i></div>
                         <div class="op-number" data-target="320">0</div>
                         <div class="op-label">Active Sites</div>
                     </div>
                     <div class="op-stat">
+                        <div class="op-stat-icon"><i class="fas fa-oil-well"></i></div>
                         <div class="op-number" data-target="2.8">0</div>
                         <div class="op-label">Million Barrels/Day</div>
                     </div>
                     <div class="op-stat">
+                        <div class="op-stat-icon"><i class="fas fa-users-gear"></i></div>
                         <div class="op-number" data-target="50000">0</div>
-                        <div class="op-label">Employees</div>
+                        <div class="op-label">Employees Worldwide</div>
                     </div>
                 </div>
-                <div class="operation-map">
-                    <div class="map-dot" style="top: 30%; left: 20%;"></div>
-                    <div class="map-dot" style="top: 40%; left: 50%;"></div>
-                    <div class="map-dot" style="top: 55%; left: 30%;"></div>
-                    <div class="map-dot" style="top: 60%; left: 70%;"></div>
-                    <div class="map-dot" style="top: 35%; left: 80%;"></div>
-                    <div class="map-dot" style="top: 70%; left: 25%;"></div>
-                    <div class="map-globe">
-                        <i class="fas fa-globe-americas"></i>
+
+                <!-- Interactive Map & Region Tooltip Explorer -->
+                <div class="operation-map-wrapper">
+                    <div class="operation-map">
+                        <div class="map-grid-overlay"></div>
+                        <!-- Stylized Global Background SVG -->
+                        <div class="map-globe">
+                            <i class="fas fa-globe-americas"></i>
+                        </div>
+
+                        <!-- Interactive Map Hotspots -->
+                        <button class="map-dot active" style="top: 32%; left: 22%;" data-region="na" aria-label="North America Operations">
+                            <span class="dot-pulse"></span>
+                            <span class="dot-label">North America</span>
+                        </button>
+                        <button class="map-dot" style="top: 28%; left: 48%;" data-region="eu" aria-label="Europe &amp; North Sea Operations">
+                            <span class="dot-pulse"></span>
+                            <span class="dot-label">North Sea (UK/EU)</span>
+                        </button>
+                        <button class="map-dot" style="top: 42%; left: 61%;" data-region="me" aria-label="Middle East Operations">
+                            <span class="dot-pulse"></span>
+                            <span class="dot-label">Middle East Hub</span>
+                        </button>
+                        <button class="map-dot" style="top: 55%; left: 47%;" data-region="af" aria-label="West Africa Deepwater">
+                            <span class="dot-pulse"></span>
+                            <span class="dot-label">West Africa</span>
+                        </button>
+                        <button class="map-dot" style="top: 58%; left: 78%;" data-region="ap" aria-label="Asia-Pacific LNG Hub">
+                            <span class="dot-pulse"></span>
+                            <span class="dot-label">Asia-Pacific</span>
+                        </button>
+                        <button class="map-dot" style="top: 72%; left: 31%;" data-region="sa" aria-label="South America Offshore">
+                            <span class="dot-pulse"></span>
+                            <span class="dot-label">South America</span>
+                        </button>
+                    </div>
+
+                    <!-- Interactive Regional Detail Card -->
+                    <div class="region-detail-card" id="regionDetailCard">
+                        <div class="region-badge" id="regionBadge">NORTH AMERICA HUB</div>
+                        <h4 id="regionTitle">Permian Basin &amp; Gulf of Mexico Deepwater</h4>
+                        <p id="regionDesc">Headquarters operations overseeing 120+ exploration sites, world-scale LNG export facilities, and our primary CCUS carbon capture network.</p>
+                        <div class="region-metrics-grid">
+                            <div class="r-metric">
+                                <span>Output</span>
+                                <strong id="regionOutput">1,250,000 bbl/d</strong>
+                            </div>
+                            <div class="r-metric">
+                                <span>Active Rigs</span>
+                                <strong id="regionRigs">42 Offshore/Onshore</strong>
+                            </div>
+                            <div class="r-metric">
+                                <span>ESG Status</span>
+                                <strong id="regionEsg">100% Zero-Flaring</strong>
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </div>
+
+            <!-- Mobile/Quick Region Pills -->
+            <div class="region-pills" id="regionPills">
+                <button class="region-pill active" data-region="na">North America</button>
+                <button class="region-pill" data-region="eu">North Sea / UK</button>
+                <button class="region-pill" data-region="me">Middle East</button>
+                <button class="region-pill" data-region="af">West Africa</button>
+                <button class="region-pill" data-region="ap">Asia-Pacific</button>
+                <button class="region-pill" data-region="sa">South America</button>
             </div>
         </div>
     </section>
 
-    <!-- Stats Section -->
+    <!-- Stats & ESG Impact Section -->
     <section class="stats" id="stats">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Our Impact</span>
-                <h2 class="section-title">Driving Global Progress</h2>
-                <p class="section-subtitle">Numbers that reflect our commitment to excellence</p>
+                <span class="section-tag"><i class="fas fa-chart-pie"></i> Our Impact &amp; ESG</span>
+                <h2 class="section-title">Driving Measurable Progress Toward Net Zero</h2>
+                <p class="section-subtitle">Transparent environmental, social, and operational metrics verified by independent auditors</p>
             </div>
+
+            <!-- 4 Stat Cards -->
             <div class="stats-grid">
                 <div class="stat-card">
-                    <i class="fas fa-gas-pump"></i>
-                    <div class="stat-number" data-target="50">0</div>
-                    <div class="stat-suffix">+</div>
-                    <div class="stat-label">Years of Excellence</div>
+                    <div class="stat-icon-wrapper"><i class="fas fa-gas-pump"></i></div>
+                    <div class="stat-number-wrapper">
+                        <div class="stat-number" data-target="50">0</div>
+                        <div class="stat-suffix">+</div>
+                    </div>
+                    <div class="stat-label">Years of Safety &amp; Excellence</div>
+                    <p class="stat-note">Trusted energy provider since 1972</p>
                 </div>
                 <div class="stat-card">
-                    <i class="fas fa-users"></i>
-                    <div class="stat-number" data-target="50000">0</div>
-                    <div class="stat-suffix">+</div>
-                    <div class="stat-label">Global Employees</div>
+                    <div class="stat-icon-wrapper"><i class="fas fa-users"></i></div>
+                    <div class="stat-number-wrapper">
+                        <div class="stat-number" data-target="50000">0</div>
+                        <div class="stat-suffix">+</div>
+                    </div>
+                    <div class="stat-label">Global Team &amp; Contractors</div>
+                    <p class="stat-note">Operating in 45 countries worldwide</p>
                 </div>
                 <div class="stat-card">
-                    <i class="fas fa-flask"></i>
-                    <div class="stat-number" data-target="150">0</div>
-                    <div class="stat-suffix">+</div>
-                    <div class="stat-label">R&D Projects</div>
+                    <div class="stat-icon-wrapper"><i class="fas fa-flask"></i></div>
+                    <div class="stat-number-wrapper">
+                        <div class="stat-number" data-target="150">0</div>
+                        <div class="stat-suffix">+</div>
+                    </div>
+                    <div class="stat-label">Active R&amp;D CleanTech Projects</div>
+                    <p class="stat-note">Hydrogen, CCUS, and bio-feedstocks</p>
                 </div>
-                <div class="stat-card">
-                    <i class="fas fa-recycle"></i>
-                    <div class="stat-number" data-target="40">0</div>
-                    <div class="stat-suffix">%</div>
-                    <div class="stat-label">Emissions Reduced</div>
+                <div class="stat-card stat-card-green">
+                    <div class="stat-icon-wrapper"><i class="fas fa-recycle"></i></div>
+                    <div class="stat-number-wrapper">
+                        <div class="stat-number" data-target="40">0</div>
+                        <div class="stat-suffix">%</div>
+                    </div>
+                    <div class="stat-label">Scope 1 &amp; 2 Emissions Cut</div>
+                    <p class="stat-note">On track for 75% reduction by 2030</p>
+                </div>
+            </div>
+
+            <!-- ESG Progress Scorecard -->
+            <div class="esg-scorecard">
+                <div class="esg-header">
+                    <h4><i class="fas fa-leaf"></i> 2026 ESG Decarbonization Scorecard</h4>
+                    <span class="esg-status-pill">AUDITED BY SGS GLOBAL • ISO 14064</span>
+                </div>
+                <div class="esg-bars-grid">
+                    <div class="esg-bar-item">
+                        <div class="esg-bar-label">
+                            <span>Scope 1 &amp; 2 Emissions Reduction</span>
+                            <strong>40% / 75% Target (2030)</strong>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill" style="width: 53%;"></div>
+                        </div>
+                    </div>
+                    <div class="esg-bar-item">
+                        <div class="esg-bar-label">
+                            <span>Zero Routine Flaring Compliance</span>
+                            <strong>94% / 100% Target (2027)</strong>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill" style="width: 94%;"></div>
+                        </div>
+                    </div>
+                    <div class="esg-bar-item">
+                        <div class="esg-bar-label">
+                            <span>Renewable Energy Operations Power Mix</span>
+                            <strong>38% / 65% Target (2035)</strong>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill green-fill" style="width: 58%;"></div>
+                        </div>
+                    </div>
+                    <div class="esg-bar-item">
+                        <div class="esg-bar-label">
+                            <span>Water Recycling &amp; Closed-Loop Refining</span>
+                            <strong>88% / 95% Target (2028)</strong>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill" style="width: 88%;"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -245,64 +701,98 @@
         <div class="container">
             <div class="contact-wrapper">
                 <div class="contact-info">
-                    <span class="section-tag">Get In Touch</span>
+                    <span class="section-tag"><i class="fas fa-envelope-open-text"></i> Get In Touch</span>
                     <h2 class="section-title">Let's Build Energy Solutions Together</h2>
-                    <p>Whether you're looking for partnership opportunities, investment information, or have questions about our operations, our team is ready to assist.</p>
+                    <p>Whether you are seeking institutional partnerships, joint-venture exploration, investor relations data, or clean-tech collaboration, our leadership team is ready to assist.</p>
+                    
                     <div class="contact-details">
                         <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <h4>Headquarters</h4>
-                                <p>1500 Energy Plaza, Houston, TX 77002, USA</p>
+                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="contact-text">
+                                <h4>Global Headquarters</h4>
+                                <p>1500 Energy Plaza, Downtown Houston, TX 77002, USA</p>
                             </div>
                         </div>
                         <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <div>
-                                <h4>Call Us</h4>
-                                <p>+1 (800) NEXUS-ENERGY</p>
+                            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                            <div class="contact-text">
+                                <h4>Call Our Team</h4>
+                                <p id="phoneText">+1 (800) NEXUS-ENERGY</p>
                             </div>
+                            <button class="btn-copy" data-copy="+1 (800) NEXUS-ENERGY" aria-label="Copy phone number">
+                                <i class="fas fa-copy"></i>
+                            </button>
                         </div>
                         <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h4>Email Us</h4>
-                                <p>contact@nexuspetroleum.com</p>
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="contact-text">
+                                <h4>Email Enquiries</h4>
+                                <p id="emailText">contact@nexuspetroleum.com</p>
                             </div>
+                            <button class="btn-copy" data-copy="contact@nexuspetroleum.com" aria-label="Copy email address">
+                                <i class="fas fa-copy"></i>
+                            </button>
                         </div>
                     </div>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
+
+                    <div class="social-wrapper">
+                        <span>Follow Global Operations:</span>
+                        <div class="social-links">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Twitter X"><i class="fab fa-x-twitter"></i></a>
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        </div>
                     </div>
                 </div>
+
+                <!-- Modern Glassmorphic Contact Form -->
                 <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <input type="text" placeholder="Your Name" required>
+                    <form id="contactForm" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="formName">Full Name *</label>
+                                <input type="text" id="formName" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="formEmail">Business Email *</label>
+                                <input type="email" id="formEmail" placeholder="j.doe@company.com" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="formCompany">Organization / Company</label>
+                                <input type="text" id="formCompany" placeholder="Energy Corp International">
+                            </div>
+                            <div class="form-group">
+                                <label for="formType">Inquiry Type *</label>
+                                <select id="formType" required>
+                                    <option value="">Select Inquiry Type</option>
+                                    <option value="partnership">Joint Venture &amp; Partnership</option>
+                                    <option value="investment">Investor Relations &amp; ESG</option>
+                                    <option value="cleantech">Carbon Capture &amp; Hydrogen</option>
+                                    <option value="careers">Global Careers &amp; HR</option>
+                                    <option value="media">Media &amp; Press Relations</option>
+                                    <option value="other">General Inquiry</option>
+                                </select>
+                            </div>
                         </div>
                         <div class="form-group">
-                            <input type="email" placeholder="Your Email" required>
+                            <label for="formSubject">Subject *</label>
+                            <input type="text" id="formSubject" placeholder="Inquiry regarding Permian CleanTech partnership..." required>
                         </div>
                         <div class="form-group">
-                            <input type="text" placeholder="Subject" required>
+                            <label for="formMessage">Message *</label>
+                            <textarea id="formMessage" rows="4" placeholder="Share details about your project or inquiry..." required></textarea>
                         </div>
-                        <div class="form-group">
-                            <select required>
-                                <option value="">Select Inquiry Type</option>
-                                <option value="partnership">Partnership</option>
-                                <option value="investment">Investment</option>
-                                <option value="careers">Careers</option>
-                                <option value="media">Media</option>
-                                <option value="other">Other</option>
-                            </select>
+                        <div class="form-checkbox">
+                            <label class="custom-checkbox">
+                                <input type="checkbox" id="formSubscribe" checked>
+                                <span class="checkmark"></span>
+                                <span class="label-text">Subscribe to Nexus Quarterly Energy &amp; Decarbonization Insights</span>
+                            </label>
                         </div>
-                        <div class="form-group">
-                            <textarea rows="5" placeholder="Your Message" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">
+                        <button type="submit" class="btn btn-primary btn-submit">
                             <span>Send Message</span>
                             <i class="fas fa-paper-plane"></i>
                         </button>
@@ -314,54 +804,114 @@
 
     <!-- Footer -->
     <footer class="footer">
+        <!-- Top Newsletter Bar in Footer -->
+        <div class="footer-newsletter">
+            <div class="container">
+                <div class="newsletter-grid">
+                    <div class="newsletter-text">
+                        <h3><i class="fas fa-envelope-open-text"></i> Stay Informed on Global Energy Markets</h3>
+                        <p>Receive our quarterly executive briefs on commodity pricing, energy transition progress, and CCUS technology.</p>
+                    </div>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" placeholder="Enter your business email address..." required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
         <div class="container">
             <div class="footer-grid">
-                <div class="footer-col">
+                <div class="footer-col brand-col">
                     <div class="footer-logo">
                         <i class="fas fa-oil-well"></i>
-                        <span>NEXUS</span>
+                        <span>NEXUS<span class="logo-dot">.</span></span>
                     </div>
-                    <p>Powering tomorrow's energy with sustainable petroleum solutions and innovative technology.</p>
+                    <p>Powering tomorrow's energy with sustainable petroleum solutions, deepwater engineering, and industrial carbon decarbonization.</p>
+                    <div class="footer-cert-badges">
+                        <span>ISO 9001</span>
+                        <span>ISO 14001</span>
+                        <span>ISO 45001</span>
+                    </div>
                 </div>
                 <div class="footer-col">
                     <h4>Company</h4>
                     <ul>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#operations">Operations</a></li>
-                        <li><a href="#">Sustainability</a></li>
-                        <li><a href="#">Careers</a></li>
+                        <li><a href="#about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="#operations"><i class="fas fa-chevron-right"></i> Global Operations</a></li>
+                        <li><a href="#projects"><i class="fas fa-chevron-right"></i> Featured Assets</a></li>
+                        <li><a href="#stats"><i class="fas fa-chevron-right"></i> ESG &amp; Decarbonization</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Careers &amp; Talent</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Investors</h4>
+                    <h4>Investor Relations</h4>
                     <ul>
-                        <li><a href="#">Financial Reports</a></li>
-                        <li><a href="#">Stock Information</a></li>
-                        <li><a href="#">Annual Meeting</a></li>
-                        <li><a href="#">News Releases</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Quarterly Financial Reports</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> SEC &amp; Regulatory Filings</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Annual General Meeting</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Dividend &amp; Stock Info</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Investor Presentations</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Resources</h4>
+                    <h4>Governance &amp; Safety</h4>
                     <ul>
-                        <li><a href="#">Energy Education</a></li>
-                        <li><a href="#">Safety Standards</a></li>
-                        <li><a href="#">Environmental</a></li>
-                        <li><a href="#">Community</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Safety &amp; Zero-LTI Standards</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Ethics &amp; Integrity Hotline</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Environmental Compliance</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Supplier &amp; Partner Portal</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Cybersecurity Statement</a></li>
                     </ul>
                 </div>
             </div>
+
             <div class="footer-bottom">
-                <p>&copy; 2024 Nexus Petroleum Corporation. All rights reserved.</p>
+                <p id="copyrightText">&copy; 2026 Nexus Petroleum Corporation. All rights reserved.</p>
                 <div class="footer-links">
                     <a href="#">Privacy Policy</a>
                     <a href="#">Terms of Use</a>
                     <a href="#">Cookie Policy</a>
-                    <a href="#">Good idea</a>
+                    <a href="#">Accessibility Statement</a>
+                    <a href="#">Security &amp; Compliance</a>
                 </div>
             </div>
         </div>
     </footer>
+
+    <!-- Service Details Modal -->
+    <div class="modal-backdrop" id="serviceModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal-card">
+            <button class="modal-close" id="modalCloseBtn" aria-label="Close Modal">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-header" id="modalHeader">
+                <span class="modal-tag" id="modalTag">UPSTREAM TECH</span>
+                <h3 id="modalTitle">Technical Service Specifications</h3>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Dynamically populated via JS -->
+            </div>
+            <div class="modal-footer">
+                <a href="#contact" class="btn btn-primary modal-action-btn">
+                    <span>Inquire About Partnership</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <button class="btn btn-secondary" id="modalCloseSecondaryBtn">Close Window</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Toast Notification -->
+    <div class="toast" id="toast" role="status" aria-live="polite">
+        <div class="toast-icon"><i class="fas fa-check-circle"></i></div>
+        <div class="toast-message" id="toastMessage">Action completed successfully!</div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <a href="#home" class="back-to-top" id="backToTop" aria-label="Back to top of page">
+        <i class="fas fa-arrow-up"></i>
+    </a>
 
     <script src="script.js"></script>
 </body>

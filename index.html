@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nexus Petroleum - Powering Tomorrow's Energy</title>
+    <meta name="description" content="Nexus Petroleum — a global energy leader pioneering sustainable petroleum solutions with cutting-edge technology and operational excellence since 1972.">
+    <title>Nexus Petroleum — Powering Tomorrow's Energy</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -17,12 +18,13 @@
                 <span>NEXUS</span>
             </div>
             <ul class="nav-menu" id="navMenu">
-                <li><a href="#home">Home</a></li>
+                <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#operations">Operations</a></li>
                 <li><a href="#stats">Impact</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact" class="nav-cta">Get Started <i class="fas fa-arrow-right"></i></a></li>
             </ul>
             <div class="hamburger" id="hamburger">
                 <span></span>
@@ -38,29 +40,43 @@
         <div class="hero-particles" id="particles"></div>
         <div class="container hero-content">
             <div class="hero-text">
-                <span class="hero-badge">Global Energy Leader Since 1972</span>
+                <span class="hero-badge">
+                    <i class="fas fa-bolt"></i>
+                    Global Energy Leader Since 1972
+                </span>
                 <h1 class="hero-title">
-                    POWERING <span class="highlight">TOMORROW'S</span> ENERGY
+                    Powering <span class="highlight">Tomorrow's</span> Energy
                 </h1>
                 <p class="hero-subtitle">
                     Pioneering sustainable petroleum solutions with cutting-edge technology, 
                     operational excellence, and unwavering commitment to energy security worldwide.
                 </p>
                 <div class="hero-buttons">
-                    <a href="#operations" class="btn btn-primary">
+                    <a href="#operations" class="btn btn-primary" id="heroCtaPrimary">
                         <span>Explore Operations</span>
                         <i class="fas fa-arrow-right"></i>
                     </a>
-                    <a href="#about" class="btn btn-secondary">
+                    <a href="#about" class="btn btn-secondary" id="heroCtaSecondary">
                         <span>Learn More</span>
                     </a>
                 </div>
             </div>
             <div class="hero-visual">
-                <div class="oil-rig">
-                    <div class="rig-base"></div>
-                    <div class="rig-tower"></div>
-                    <div class="rig-arm"></div>
+                <div class="energy-visualization">
+                    <div class="energy-ring energy-ring--outer"></div>
+                    <div class="energy-ring energy-ring--middle"></div>
+                    <div class="energy-ring energy-ring--inner"></div>
+                    <div class="energy-core">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <div class="energy-dots">
+                        <div class="energy-dot"></div>
+                        <div class="energy-dot"></div>
+                        <div class="energy-dot"></div>
+                        <div class="energy-dot"></div>
+                        <div class="energy-dot"></div>
+                        <div class="energy-dot"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -83,21 +99,21 @@
                 </p>
             </div>
             <div class="about-grid">
-                <div class="about-card">
+                <div class="about-card" data-delay="1">
                     <div class="card-icon">
                         <i class="fas fa-bullseye"></i>
                     </div>
                     <h3>Our Mission</h3>
                     <p>To deliver reliable, affordable, and cleaner energy solutions that drive global progress while preserving our planet for future generations.</p>
                 </div>
-                <div class="about-card">
+                <div class="about-card" data-delay="2">
                     <div class="card-icon">
                         <i class="fas fa-eye"></i>
                     </div>
                     <h3>Our Vision</h3>
                     <p>To be the world's most respected energy company, leading the transition to a sustainable energy future through innovation and integrity.</p>
                 </div>
-                <div class="about-card">
+                <div class="about-card" data-delay="3">
                     <div class="card-icon">
                         <i class="fas fa-handshake"></i>
                     </div>
@@ -117,8 +133,8 @@
                 <p class="section-subtitle">Comprehensive energy solutions across the value chain</p>
             </div>
             <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-image" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=800')">
+                <div class="service-card" data-delay="1">
+                    <div class="service-image service-image--exploration">
                         <i class="fas fa-search service-icon"></i>
                     </div>
                     <div class="service-content">
@@ -127,8 +143,8 @@
                         <a href="#" class="service-link">Learn More <i class="fas fa-chevron-right"></i></a>
                     </div>
                 </div>
-                <div class="service-card">
-                    <div class="service-image" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=800')">
+                <div class="service-card" data-delay="2">
+                    <div class="service-image service-image--production">
                         <i class="fas fa-industry service-icon"></i>
                     </div>
                     <div class="service-content">
@@ -137,8 +153,8 @@
                         <a href="#" class="service-link">Learn More <i class="fas fa-chevron-right"></i></a>
                     </div>
                 </div>
-                <div class="service-card">
-                    <div class="service-image" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1518770660439-4636190af475?w=800')">
+                <div class="service-card" data-delay="3">
+                    <div class="service-image service-image--distribution">
                         <i class="fas fa-truck service-icon"></i>
                     </div>
                     <div class="service-content">
@@ -147,8 +163,8 @@
                         <a href="#" class="service-link">Learn More <i class="fas fa-chevron-right"></i></a>
                     </div>
                 </div>
-                <div class="service-card">
-                    <div class="service-image" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=800')">
+                <div class="service-card" data-delay="4">
+                    <div class="service-image service-image--sustainability">
                         <i class="fas fa-leaf service-icon"></i>
                     </div>
                     <div class="service-content">
@@ -171,30 +187,32 @@
             </div>
             <div class="operations-content">
                 <div class="operation-stats">
-                    <div class="op-stat">
+                    <div class="op-stat" data-delay="1">
                         <div class="op-number" data-target="45">0</div>
                         <div class="op-label">Countries</div>
                     </div>
-                    <div class="op-stat">
+                    <div class="op-stat" data-delay="2">
                         <div class="op-number" data-target="320">0</div>
                         <div class="op-label">Active Sites</div>
                     </div>
-                    <div class="op-stat">
+                    <div class="op-stat" data-delay="3">
                         <div class="op-number" data-target="2.8">0</div>
                         <div class="op-label">Million Barrels/Day</div>
                     </div>
-                    <div class="op-stat">
+                    <div class="op-stat" data-delay="4">
                         <div class="op-number" data-target="50000">0</div>
                         <div class="op-label">Employees</div>
                     </div>
                 </div>
                 <div class="operation-map">
-                    <div class="map-dot" style="top: 30%; left: 20%;"></div>
-                    <div class="map-dot" style="top: 40%; left: 50%;"></div>
-                    <div class="map-dot" style="top: 55%; left: 30%;"></div>
-                    <div class="map-dot" style="top: 60%; left: 70%;"></div>
-                    <div class="map-dot" style="top: 35%; left: 80%;"></div>
-                    <div class="map-dot" style="top: 70%; left: 25%;"></div>
+                    <div class="map-dot" style="top: 28%; left: 22%;"></div>
+                    <div class="map-dot" style="top: 38%; left: 48%;"></div>
+                    <div class="map-dot" style="top: 52%; left: 32%;"></div>
+                    <div class="map-dot" style="top: 58%; left: 68%;"></div>
+                    <div class="map-dot" style="top: 33%; left: 78%;"></div>
+                    <div class="map-dot" style="top: 68%; left: 26%;"></div>
+                    <div class="map-dot" style="top: 42%; left: 62%;"></div>
+                    <div class="map-dot" style="top: 25%; left: 55%;"></div>
                     <div class="map-globe">
                         <i class="fas fa-globe-americas"></i>
                     </div>
@@ -212,25 +230,25 @@
                 <p class="section-subtitle">Numbers that reflect our commitment to excellence</p>
             </div>
             <div class="stats-grid">
-                <div class="stat-card">
+                <div class="stat-card" data-delay="1">
                     <i class="fas fa-gas-pump"></i>
                     <div class="stat-number" data-target="50">0</div>
                     <div class="stat-suffix">+</div>
                     <div class="stat-label">Years of Excellence</div>
                 </div>
-                <div class="stat-card">
+                <div class="stat-card" data-delay="2">
                     <i class="fas fa-users"></i>
                     <div class="stat-number" data-target="50000">0</div>
                     <div class="stat-suffix">+</div>
                     <div class="stat-label">Global Employees</div>
                 </div>
-                <div class="stat-card">
+                <div class="stat-card" data-delay="3">
                     <i class="fas fa-flask"></i>
                     <div class="stat-number" data-target="150">0</div>
                     <div class="stat-suffix">+</div>
                     <div class="stat-label">R&D Projects</div>
                 </div>
-                <div class="stat-card">
+                <div class="stat-card" data-delay="4">
                     <i class="fas fa-recycle"></i>
                     <div class="stat-number" data-target="40">0</div>
                     <div class="stat-suffix">%</div>
@@ -272,25 +290,25 @@
                         </div>
                     </div>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
                 <div class="contact-form">
                     <form id="contactForm">
                         <div class="form-group">
-                            <input type="text" placeholder="Your Name" required>
+                            <input type="text" id="formName" placeholder="Your Name" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" placeholder="Your Email" required>
+                            <input type="email" id="formEmail" placeholder="Your Email" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" placeholder="Subject" required>
+                            <input type="text" id="formSubject" placeholder="Subject" required>
                         </div>
                         <div class="form-group">
-                            <select required>
+                            <select id="formInquiry" required>
                                 <option value="">Select Inquiry Type</option>
                                 <option value="partnership">Partnership</option>
                                 <option value="investment">Investment</option>
@@ -300,9 +318,9 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <textarea rows="5" placeholder="Your Message" required></textarea>
+                            <textarea id="formMessage" rows="5" placeholder="Your Message" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">
+                        <button type="submit" class="btn btn-primary" id="formSubmitBtn">
                             <span>Send Message</span>
                             <i class="fas fa-paper-plane"></i>
                         </button>
@@ -352,16 +370,20 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Nexus Petroleum Corporation. All rights reserved.</p>
+                <p id="footerCopyright">&copy; 2024 Nexus Petroleum Corporation. All rights reserved.</p>
                 <div class="footer-links">
                     <a href="#">Privacy Policy</a>
                     <a href="#">Terms of Use</a>
                     <a href="#">Cookie Policy</a>
-                    <a href="#">Good idea</a>
                 </div>
             </div>
         </div>
     </footer>
+
+    <!-- Back to Top -->
+    <a href="#home" class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
 
     <script src="script.js"></script>
 </body>
